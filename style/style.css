@@ -1,0 +1,84 @@
+body{
+    background-image: url("../assets/backgrounds/snow.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    font-family: neue-haas-grotesk-display, sans-serif;
+
+
+}
+
+.wave{
+    position: absolute;
+    left:0;
+    bottom:30%;
+    width:100%;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    opacity: 0.97;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.contentBox{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    background-color: #ffffff;
+    opacity: 0.94;
+    min-height: 15em;
+
+}
+
+
+.searchBar{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#weatherboxContainer {
+    width : 75%;
+    margin : 0 auto;
+    margin-top: 1em;
+    display : flex;
+    justify-content : space-between;
+}
+
+.weatherbox {
+    padding: 0;
+    height : 14em;
+    width : 15em;
+    min-width: 15em;
+    border : 1px solid black;
+}
+.test{
+    background-color: greenyellow;
+}
+
+.sidebyside {
+     margin : 0 auto;
+    max-width: 15em;
+    display : flex;
+    justify-content : space-between;
+}
+.imageSize{
+    max-width:100%;
+    max-height:100%;
+}
+.weatherDetail {
+    height : 8em;
+    width : 7.5em;
+    min-width: 7.4em;
+    background-color: coral;
+    border : 1px solid black;
+}
