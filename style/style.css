@@ -76,9 +76,36 @@ body{
     max-height:100%;
 }
 .weatherDetail {
+    line-height: 0.01em;
     height : 8em;
     width : 7.5em;
     min-width: 7.4em;
     background-color: coral;
-    border : 1px solid black;
+    border : 1px solid #000000;
+    text-align: left;
 }
+
+.wbTitle{
+    font-weight: bolder;
+    font-size: large;
+}
+
+.nowTemp{
+    font-weight: bold;
+    font-size: large;
+
+}
+
+
+.wbTempLabel{
+    font-weight: lighter;
+    font-size: medium;
+    float:left;
+}
+
+.wbTemp{
+    font-weight: bold;
+    font-size: large;
+    float:right;
+}
+
