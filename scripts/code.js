@@ -1,30 +1,50 @@
 //globals
-let backgroundImage;
+
+
+let globals = {
+    //general
+    backgroundImage: '',
 //now
-let nowDate;
-let nowImage;
-let nowTemp;
+    nowDate: ' ',
+    nowImage: '',
+    nowTemp: '',
 // today
-let todayForecast;
-let todayImage;
-let todayMin;
-let todayMax;
+    todayForecast: '',
+    todayImage: '',
+    todayMin: '',
+    todayMax: '',
 //tomorrow
-let tomorrowForecast;
-let tomorrowImage;
-let tomorrowMin;
-let tomorrowMax;
+    tomorrowForecast : '',
+    tomorrowImage: '',
+    tomorrowMin: '',
+    tomorrowMax: '',
 //overmorrow
-let overmorrowTitle;
-let overmorrowForecast;
-let overmorrowImage;
-let overmorrowMin;
-let overmorrowMax;
+    overmorrowTitle: '',
+    overmorrowForecast: '',
+    overmorrowImage: '',
+    overmorrowMin: '',
+    overmorrowMax: ''
+}
+
 
 
 const setup = () => {
+// Assigning all the globals because I hate myself
+    globalsInit();
 
 }
 
+const  globalsInit = () =>{
+    //now
+    globals.nowDate = $("#nowDate");
+    globals.nowImage = $("#nowImage");
+    globals.nowTemp = $("#nowTemp");
+
+    //today
+    globals.todayForecast = $("#todayForecast");
+    globals.todayImage = $("#todayImage")
+
+
+}
 
 window.addEventListener("load", setup)
