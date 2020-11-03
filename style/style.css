@@ -36,10 +36,13 @@ body{
     min-height: 15em;
 
 }
-
-.cornerBorder{
+.weatherbox:hover{
     border-radius: 20px;
-    border: 333333;
+    background-color: #e3e3e3;
+    padding-left: 10px;
+    margin-left: -10px;
+    cursor: pointer;
+
 }
 
 .searchBar{
@@ -47,7 +50,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    cursor: context-menu;
 }
 
 #weatherboxContainer {
@@ -59,13 +62,14 @@ body{
 }
 
 .weatherbox {
-    padding: 0;
+    padding-bottom: 0.3em;
     height : 14em;
     width : 15em;
     min-width: 15em;
-}
-.test{
-    background-color: greenyellow;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .sidebyside {
@@ -84,6 +88,8 @@ body{
     width : 7.5em;
     min-width: 7.4em;
     text-align: center;
+    pointer-events: none;
+
 
 }
 
