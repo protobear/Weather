@@ -5,12 +5,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="359f1371-b520-4c59-9339-40244e49c0e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/backgrounds/osman-rana-GXEZuWo5m4I-unsplash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/backgrounds/rain.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
     </list>
+=======
+    <list default="true" id="359f1371-b520-4c59-9339-40244e49c0e3" name="Default Changelist" comment="just end my life" />
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,9 +74,21 @@
       <updated>1604270570066</updated>
       <workItem from="1604270571118" duration="2710000" />
       <workItem from="1604307262655" duration="17157000" />
+<<<<<<< Updated upstream
       <workItem from="1604345066661" duration="1684000" />
       <workItem from="1604352991489" duration="3020000" />
+=======
+      <workItem from="1604345066661" duration="1911000" />
+>>>>>>> Stashed changes
     </task>
+    <task id="LOCAL-00001" summary="just end my life">
+      <created>1604346818045</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604346818045</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,7 +106,12 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="just end my life" />
+    <option name="LAST_COMMIT_MESSAGE" value="just end my life" />
+  </component>
   <component name="WindowStateProjectService">
+<<<<<<< Updated upstream
     <state x="417" y="119" key="CommitChangelistDialog2" timestamp="1604353114476">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -99,6 +120,24 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="638" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.1027@0.23.1680.1027" timestamp="1604353043938" />
+=======
+    <state x="715" y="349" key="#Notifications" timestamp="1604346894014">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="715" y="349" key="#Notifications/0.0.1920.1050/1920.370.1360.738@0.0.1920.1050" timestamp="1604346894014" />
+    <state x="838" y="423" key="Github.ShareDialog" timestamp="1604346877716">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="838" y="423" key="Github.ShareDialog/0.0.1920.1050/1920.370.1360.738@0.0.1920.1050" timestamp="1604346877716" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1604346828784">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.370.1360.738@0.0.1920.1050" timestamp="1604346828784" />
+    <state x="777" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604346975534">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="777" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050/1920.370.1360.738@0.0.1920.1050" timestamp="1604346975534" />
+>>>>>>> Stashed changes
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1604309790604">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
