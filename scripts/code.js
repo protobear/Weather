@@ -27,10 +27,14 @@ let globals = {
     overmorrowForecast: '',
     overmorrowImage: '',
     overmorrowMin: '',
-    overmorrowMax: ''
+    overmorrowMax: '',
 
 //clicks for the divs
-    //todo: clicks for the divs
+    nowBox: '',
+    todayBox: '',
+    tomorrowBox: '',
+    overmorrowBox: ''
+
 }
 
 
@@ -38,6 +42,8 @@ let globals = {
 const setup = () => {
 // Assigning all the globals because I hate myself
     globalsInit();
+
+    //searchbar, if in focus and enter is pressed then searchinput is in searchinputcontent
     $(document).on('keypress',function(e) {
         if($("#searchInput").is(':focus') && e.which === 13) {
             globals.searchInputContent = $("#searchInput").val();
@@ -45,8 +51,14 @@ const setup = () => {
         }
     });
 
+    $("#nowBox").click(function() { console.log("test") });
 
 }
+
+const test = () =>{
+    console.log("test");
+}
+
 
 const  globalsInit = () =>{
     globals.searchInput = $("#searchInput");
@@ -74,6 +86,12 @@ const  globalsInit = () =>{
     globals.overmorrowImage = $("#overmorrowImage");
     globals.overmorrowMin = $("#overmorrowMin");
     globals.overmorrowMax = $("#overmorrowMax");
+
+    //div click
+    globals.nowBox = $("#nowBox");
+    globals.todayBox = $("#todayBox");
+    globals.tomorrowBox = $("#tomorrowBox");
+    globals.overmorrowBox = $("#overmorrowBox");
 
 }
 

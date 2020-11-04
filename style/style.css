@@ -55,7 +55,7 @@ body{
     opacity: 0.8;
 }
 
-#weatherboxContainer {
+.weatherboxContainer {
     width : 85%;
     margin : 0 auto;
     margin-top: 1em;
