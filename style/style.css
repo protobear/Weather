@@ -68,10 +68,6 @@ body{
     height : 14em;
     width : 15em;
     min-width: 15em;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
 }
 
 .sidebyside {

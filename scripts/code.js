@@ -51,11 +51,11 @@ const setup = () => {
         }
     });
 
-    $("#nowBox").click(function() { console.log("test") });
+    $("#nowBox").click(nowDetails);
 
 }
 
-const test = () =>{
+const nowDetails = () =>{
     console.log("test");
 }
 
