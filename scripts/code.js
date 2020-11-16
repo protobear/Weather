@@ -6,42 +6,14 @@ let globals = {
     backgroundImage: '',
     location: '',
 //Search
-    searchInput: '',
-    searchInputContent: '',
-//now
-    nowDate: ' ',
-    nowImage: '',
-    nowTemp: '',
-// today
-    todayForecast: '',
-    todayImage: '',
-    todayMin: '',
-    todayMax: '',
-//tomorrow
-    tomorrowForecast : '',
-    tomorrowImage: '',
-    tomorrowMin: '',
-    tomorrowMax: '',
-//overmorrow -- Yes I checked, overmorrow is in fact a word.
-    overmorrowTitle: '',
-    overmorrowForecast: '',
-    overmorrowImage: '',
-    overmorrowMin: '',
-    overmorrowMax: '',
-
-//clicks for the divs
-    nowBox: '',
-    todayBox: '',
-    tomorrowBox: '',
-    overmorrowBox: ''
-
+    searchInput: $("#searchInput"),
+    searchInputContent: ''
 }
 
 
 
 const setup = () => {
 // Assigning all the globals because I hate myself
-    globalsInit();
 
     //searchbar, if in focus and enter is pressed then searchinput is in searchinputcontent
     $(document).on('keypress',function(e) {
@@ -51,48 +23,39 @@ const setup = () => {
         }
     });
 
-    $("#nowBox").click(nowDetails);
+}
+
+const getCurrent = () =>{
+    let personInfo = $("#inputUsername").val();
+
+    baseURL = baseURL.concat(personInfo);
+    console.log(baseURL);
+
+    $.ajax({
+        url: baseURL,
+        key: a9f26adcfd3d4e2fbda204136201611,
+        type: "get",
+        success: toPage,
+        error: nope
+    })
+    baseURL = "https://api.github.com/users/";
+    currentURL = "http://api.weatherapi.com/v1/current.json?key=&q=Gent,BE";
+    forecastURL = "http://api.weatherapi.com/v1/forecast.json?key=&q=Gent,BE&days=3";
+}
+
+const getForecast = () =>{
 
 }
 
-const nowDetails = () =>{
-    console.log("test");
-}
 
-
-const  globalsInit = () =>{
-    globals.searchInput = $("#searchInput");
-
-    //now
-    globals.nowDate = $("#nowDate");
-    globals.nowImage = $("#nowImage");
-    globals.nowTemp = $("#nowTemp");
-
-    //today
-    globals.todayForecast = $("#todayForecast");
-    globals.todayImage = $("#todayImage");
-    globals.todayMin = $("#todayMin");
-    globals.todayMax = $("#todayMax");
-
-    //tomorrow
-    globals.tomorrowForecast = $("#tomorrowForecast");
-    globals.tomorrowImage = $("#tomorrowImage");
-    globals.tomorrowMin = $("#tomorrowMin");
-    globals.tomorrowMax = $("#tomorrowMax");
-
-    //overmorrow
-    globals.overmorrowTitle = $("#overmorrowTitle");
-    globals.overmorrowForecast = $("#overmorrowForecast");
-    globals.overmorrowImage = $("#overmorrowImage");
-    globals.overmorrowMin = $("#overmorrowMin");
-    globals.overmorrowMax = $("#overmorrowMax");
-
-    //div click
-    globals.nowBox = $("#nowBox");
-    globals.todayBox = $("#todayBox");
-    globals.tomorrowBox = $("#tomorrowBox");
-    globals.overmorrowBox = $("#overmorrowBox");
+const topage = (dataFromServer) =>{
 
 }
+
+const nope = () =>{
+    window.alert("Marnick made a fucky wucky and wants to grab the bottle again")
+
+}
+
 
 window.addEventListener("load", setup)
