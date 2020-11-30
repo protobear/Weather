@@ -34,14 +34,16 @@ const GetAndSetWeather = () =>{
         url: currentURL,
         //key: "a9f26adcfd3d4e2fbda204136201611",
         type: "get",
-        success: setCurrentWeather,
-        error: myCodeIsACrime
+        success: setCurrentWeather
     })
 
 }
 
-const myCodeIsACrime = (err) =>{
-    console.log(err);
+const myCodeIsACrime = (jqXHR, textStatus, errorThrown) =>{
+    console.log("Error")
+    console.log(jqXHR);
+    console.log(textStatus);
+    console.log(errorThrown);
 }
 
 const setCurrentWeather = (receivedData) =>{
@@ -49,7 +51,7 @@ const setCurrentWeather = (receivedData) =>{
 
     let test = receivedData;
     console.log(test);
-    $('nowTemp').val(receivedData.temp_c + " °C");
+    $('nowTemp').val(test.temp_c + " °C");
 
 
 }
