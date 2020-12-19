@@ -8,14 +8,17 @@
     <script src="scripts/code.js"></script>
     <title>Weather</title>
 </head>
-<body>
-
+<body id="bodyID" class="body">
 
 
 <div class="searchBar">
     <div class="searchBarContents">
         <input type="text" placeholder="Location" class="search" id="searchInput" value="">
     </div>
+</div>
+
+<div id="searchpop" class="searchpopview">
+    <p>Once you've typed in a location, press enter to search</p>
 </div>
 
 <div id="nowView" class="detailView">
@@ -25,9 +28,20 @@
 
 <div id="todayView" class="detailView">
     <p id="todayvisibility"></p>
-    <p id=todaywindpeed"></p>
+    <p id="todaywindspeed">hi there</p>
 </div>
 
+<div id="tomorrowView" class="detailView">
+    <p id="tomorrowvisibility"></p>
+    <p id="tomorrowwindspeed"></p>
+</div>
+
+<div id="overmorrowView" class="detailView">
+    <p id="overmorrowvisibility"></p>
+    <p id="overmorrowwindspeed"></p>
+</div>
+
+<div id="allW">
 <div class="wave">
     <img src="assets/wave/wave.png" class="wave">
 </div>
@@ -113,6 +127,7 @@
     </div>
 
 
+</div>
 </div>
 </body>
 </html>
