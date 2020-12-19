@@ -54,7 +54,7 @@ const changeBG = () =>{
 
 
 const GetAndSetWeather = () =>{
-    currentURL = "http://api.weatherapi.com/v1/forecast.json?key=a9f26adcfd3d4e2fbda204136201611&q=" + globals.searchInputContent + "&days=3"
+    currentURL = "https://api.weatherapi.com/v1/forecast.json?key=a9f26adcfd3d4e2fbda204136201611&q=" + globals.searchInputContent + "&days=3"
     //get and set current
     $.ajax( {
         url: currentURL,
